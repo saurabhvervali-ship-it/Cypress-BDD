@@ -1,0 +1,38 @@
+[
+  {
+    "uri": "cypress\\e2e\\Features\\fileDownload.feature",
+    "id": "fileDownload",
+    "keyword": "Feature",
+    "name": "fileDownload",
+    "elements": [
+      {
+        "id": "download and verify tour pdf-user downloads the kashmir tour itinerary pdf",
+        "keyword": "Scenario",
+        "name": "Download and verify tour PDF User downloads the Kashmir tour itinerary PDF",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "failed",
+            "result": {
+              "status": "failed"
+            }
+          },
+          {
+            "keyword": "Step",
+            "name": "failed",
+            "result": {
+              "status": "failed"
+            }
+          },
+          {
+            "keyword": "Step",
+            "name": "passed",
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

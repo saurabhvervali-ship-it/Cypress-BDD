@@ -1,0 +1,3389 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Cucumber Feature Report</title>
+  <link rel="icon" href="https://www.lambdatest.com/favicon.ico">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <style type="text/css">
+    .panel-heading {
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    .pull-right-lg {
+        float: left;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .pull-right-lg {
+        float: right;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .pull-right-lg {
+        float: right;
+    }
+}
+
+@media (min-width: 1200px) {
+    .pull-right-lg {
+        float: right;
+    }
+}
+
+.left {
+    float: left;
+}
+
+.metadata {
+    overflow: auto;
+    letter-spacing: 0.2px;
+    border-color: white;
+    line-height: 1.6;
+    color: #4d4d4d;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    padding-bottom: 3px;
+}
+
+.panel-heading a {
+    padding: 10px 15px;
+    display: block;
+    position: relative;
+    text-decoration: none;
+}
+
+.panel-heading i.glyphicon-chevron-down {
+    display: none;
+}
+
+.panel-heading i.glyphicon-chevron-right {
+    display: inline-block;
+}
+
+.panel-heading.open i.glyphicon-chevron-down {
+    display: inline-block;
+}
+
+.panel-heading.open i.glyphicon-chevron-right {
+    display: none;
+}
+
+.generated-on {
+    text-align: right;
+    padding-bottom: 10px;
+}
+
+.panel-title b {
+    padding-right: 10px;
+}
+
+.panel-heading .label-container {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.panel-heading .label-container label {
+    margin-left: 5px;
+    padding: 5px;
+}
+
+.navbar .label-container {
+    position: absolute;
+    right: 10px;
+    top: 14px;
+}
+
+.navbar {
+    margin-bottom: 10px;
+}
+
+.navbar .label {
+    font-size: 20px;
+}
+
+.navbar .project-name {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    margin-left: -100px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.tags {
+    margin-left: 18px;
+    margin-right: 20px;
+    padding-top: 5px;
+    margin-bottom: -4px;
+}
+
+.tag {
+    font-size: 13px;
+    color: #696969;
+    letter-spacing: 0.3px;
+    font-weight: bold;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+.chart {
+    padding-bottom: 15px;
+}
+
+div.chart div div svg rect {
+    fill: #f5f5f5;
+}
+
+.arguments {
+    margin-left: 30px;
+    margin-top: 1em;
+    margin-bottom: 15px;
+}
+
+#directory {
+    background-color: #f0f0f0;
+}
+
+.screenshot {
+    padding: 2% 0 2% 0;
+}
+
+.description {
+    background-color: white;
+    border-color: white;
+    line-height: 1.6;
+    color: #6f6f6f;
+    font-weight: 400;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    padding: 0.1em 0.5em 1.2em 1.5em
+}
+
+#scenario-description {
+    padding-bottom: 1em;
+    padding-left: 0.2em;
+}
+
+.scrollBar {
+    overflow-x: scroll;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f5f5f5;
+    color: black;
+}
+
+.info {
+    background-color: #fbfbfb;
+}
+
+pre {
+    display: block;
+    padding: 10px;
+    margin-top: 1em;
+    margin-right: 3em;
+    font-size: 13px;
+    line-height: 1.42857143;
+    word-break: break-all;
+    word-wrap: break-word;
+    color: #333;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.step-duration {
+    float: right;
+    color: #BDBDBD;
+}
+
+.footer-div {
+    text-align: right;
+    vertical-align: middle;
+    height: 3.5%;
+    width: 100%;
+}
+
+.footer-container {
+    margin-right: 10px;
+    margin-top: 5px;
+    width: 18%;
+    z-index: 10;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    text-align: center;
+    background-color: transparent;
+}
+
+.show-modal:hover {
+    background-color: #f0f0f0;
+}
+
+.footer-link {
+    font-size: 13px;
+    float: right;
+}
+
+.footer-link:hover {
+    color: darkgray;
+}
+
+.steps {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: -4px;
+}
+
+.all-features {
+    padding-top: 0.6em;
+}
+
+.keyword {
+    color: #616161;
+}
+
+.stepname {
+    word-wrap: break-word;
+}
+
+.feature-passed {
+    display: block;
+}
+
+.feature-failed{
+    display: block;
+}
+
+.label-saffron{
+    background-color: #ff9933;
+}
+
+.label-retries {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90px;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.label-retries > span:first-child {
+    min-width: 100%;
+}
+
+.ellipsis {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all .2s linear;
+    white-space: nowrap;
+    padding:.5rem 1rem;
+}
+.ellipsis:focus, .ellipsis:hover {
+  color:transparent;
+}
+.ellipsis:focus:after,.ellipsis:hover:after{
+    content:attr(data-text);
+    overflow: visible;
+    text-overflow: inherit;
+    background: #fff;
+    position: absolute;
+    left:auto;
+    top:auto;
+    width: auto;
+    max-width: 100%;
+    border: 1px solid #eaebec;
+    padding: 0 .5rem;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.28);
+    white-space: normal;
+    word-wrap: break-word;
+    display:block;
+    color:black;
+    margin-top:-1.25rem;
+    z-index: 1;
+  }
+
+    /** Issue in google-charts tooltip - https://github.com/google/google-visualization-issues/issues/2162 */
+    .google-visualization-tooltip {
+      pointer-events: none;
+    }
+
+    .count-wrapper {
+      display: flex;
+      gap: 15px;
+    }
+
+    .card {
+      border: 1px solid #f5f5f5;
+      padding: 15px;
+      color: #fff;
+      border-radius: 5px;
+      flex: 1;
+    }
+
+    .generated-on {
+      margin-right: 10px;
+    }
+
+    .card h4 {
+      font-size: 15px;
+    }
+
+    .red-box {
+      background: #d9534e;
+    }
+
+    .blue-box {
+      background: #0074ff;
+    }
+
+    .yellow-box {
+      background: #f0ad4e;
+    }
+
+    .saffron-box {
+      background: #ff9933;
+    }
+
+    .green-box {
+      background: #5cb85b;
+    }
+
+    .gray-box {
+      background: #999;
+    }
+
+    .amb-box {
+      background: #218bcf;
+    }
+
+    .undefined-box {
+      background: #22c2e2;
+    }
+
+    .mb-20px {
+      margin-bottom: 20px;
+    }
+  </style>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+
+  <div class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        
+          <a class="navbar-brand">
+            Cucumberjs Report
+          </a>
+          <div class="project-name visible-md visible-lg">
+            cypress-bdd
+          </div>
+          <div class="label-container">
+            <div class="generated-on">
+              Mon Nov 17 2025 16:53:59 GMT+0530 (India Standard Time)
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="count-wrapper mb-20px">
+      <div class="card blue-box">
+        <div class="feature-title">
+          <h4>All Scenarios</h2>
+        </div>
+        <div class="feature-value">
+          <h5>
+            23
+          </h5>
+        </div>
+      </div>
+      <div class="card green-box">
+        <div class="feature-title">
+          <h4>Passed Scenarios</h2>
+        </div>
+        <div class="feature-value">
+          <h5>
+            22
+          </h5>
+        </div>
+      </div>
+      <div class="card red-box">
+        <div class="feature-title">
+          <h4>Failed Scenarios</h2>
+        </div>
+        <div class="feature-value">
+          <h5>
+            1
+          </h5>
+        </div>
+      </div>
+      
+          
+              
+                  
+                      
+    </div>
+    <div class="row">
+      <div class="chart col-lg-6 col-md-6" id="piechart_features"></div>
+      <div class="chart col-lg-6 col-md-6" id="piechart_scenarios"></div>
+    </div>
+
+    <div>
+      <p class="text-left">
+        Execution Time: < 1ms
+      </p>
+      <p class="text-right">
+        <a id="expand_all">Expand All</a>
+        <span> | </span>
+        <a id="collapse_all">Collapse All</a>
+      </p>
+    </div>
+
+    
+      <div class="panel panel-default">
+        <div class="panel-heading open">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" href="#logOutput">
+              <i class="glyphicon glyphicon-chevron-right"></i>
+              <i class="glyphicon glyphicon-chevron-down"></i>
+              <b>Metadata</b>
+            </a>
+          </h4>
+        </div>
+        <div id="logOutput" class="panel-collapse collapse in">
+          <div class="panel-body">
+            <div class="row">
+              
+                
+                  
+                    
+                      <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class=pull-left>
+                          <strong>
+                            App Version:
+                          </strong>
+                          1.0.0
+                        </div>
+                      </div>
+                      
+                  
+                    
+                      <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class=pull-right-lg>
+                          <strong>
+                            Test Environment:
+                          </strong>
+                          STAGING
+                        </div>
+                      </div>
+                      
+                  
+                    
+                      <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class=pull-left>
+                          <strong>
+                            Browser:
+                          </strong>
+                          Chrome
+                        </div>
+                      </div>
+                      
+                  
+                    
+                      <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class=pull-right-lg>
+                          <strong>
+                            Platform:
+                          </strong>
+                          Windows 10
+                        </div>
+                      </div>
+                      
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+        
+
+
+<div class="row" xmlns="http://www.w3.org/1999/html">
+
+
+<div class="feature-passed">
+
+    <div class="col-lg-6 col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    
+                    <a data-toggle="collapse" href="#collapseFeaturecypress_bdd2ef6b9e8-e671-4289-8072-d988a15f4ed6">
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                        <i class="glyphicon glyphicon-chevron-down"></i>
+                        <b>Feature:</b>apibooks
+                        <span class="label-container">
+
+                        
+
+                        <span>< 1ms</span>
+                                
+              <span class="label label-success"
+                                                         title="1 Scenarios Passed">1</span>
+              
+              
+              
+              
+              
+                        </span>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseFeaturecypress_bdd2ef6b9e8-e671-4289-8072-d988a15f4ed6" class="panel-collapse collapse">
+                <div class="panel-body">
+                    
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocypress_bdda1e10a2f-9ae7-412e-8419-50537ed91267">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Validate Products API using cy.request Verify products API response">Validate Products API using cy.request Verify products API response</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                                <span>< 1ms</span>
+                              
+                              <span class="label label-success"
+                                                               title="1 Steps Passed">1</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocypress_bdda1e10a2f-9ae7-412e-8419-50537ed91267"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Step</span>
+                          <span class="stepname"> passed</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+
+
+<div class="feature-passed">
+
+    <div class="col-lg-6 col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    
+                    <a data-toggle="collapse" href="#collapseFeaturecypress_bdddd20b44e-e86e-4a94-b9a7-1aac81c2787a">
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                        <i class="glyphicon glyphicon-chevron-down"></i>
+                        <b>Feature:</b>calculations
+                        <span class="label-container">
+
+                        
+
+                        <span>< 1ms</span>
+                                
+              <span class="label label-success"
+                                                         title="1 Scenarios Passed">1</span>
+              
+              
+              
+              
+              
+                        </span>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseFeaturecypress_bdddd20b44e-e86e-4a94-b9a7-1aac81c2787a" class="panel-collapse collapse">
+                <div class="panel-body">
+                    
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocypress_bdd4f55cc46-b962-4b82-a81b-3548a56857c5">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Validate cart totals Add two items and verify total">Validate cart totals Add two items and verify total</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                                <span>< 1ms</span>
+                              
+                              <span class="label label-success"
+                                                               title="1 Steps Passed">1</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocypress_bdd4f55cc46-b962-4b82-a81b-3548a56857c5"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Step</span>
+                          <span class="stepname"> passed</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+</div>
+
+
+
+<div class="row" xmlns="http://www.w3.org/1999/html">
+
+
+<div class="feature-passed">
+
+    <div class="col-lg-6 col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    
+                    <a data-toggle="collapse" href="#collapseFeaturecypress_bdd4003af65-310d-4ff2-945f-9207b7323140">
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                        <i class="glyphicon glyphicon-chevron-down"></i>
+                        <b>Feature:</b>dropandcheckboxes
+                        <span class="label-container">
+
+                        
+
+                        <span>< 1ms</span>
+                                
+              <span class="label label-success"
+                                                         title="2 Scenarios Passed">2</span>
+              
+              
+              
+              
+              
+                        </span>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseFeaturecypress_bdd4003af65-310d-4ff2-945f-9207b7323140" class="panel-collapse collapse">
+                <div class="panel-body">
+                    
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocypress_bddd6e1a3d2-1844-4f8d-ba75-17452665658e">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Dropdown and Checkbox Testing Single dropdown">Dropdown and Checkbox Testing Single dropdown</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                                <span>< 1ms</span>
+                              
+                              <span class="label label-success"
+                                                               title="1 Steps Passed">1</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocypress_bddd6e1a3d2-1844-4f8d-ba75-17452665658e"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Step</span>
+                          <span class="stepname"> passed</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocypress_bdd97ccea34-853e-4c08-97d1-41b329c9dfe3">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Dropdown and Checkbox Testing Checkbox test">Dropdown and Checkbox Testing Checkbox test</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                                <span>< 1ms</span>
+                              
+                              <span class="label label-success"
+                                                               title="1 Steps Passed">1</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocypress_bdd97ccea34-853e-4c08-97d1-41b329c9dfe3"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Step</span>
+                          <span class="stepname"> passed</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+
+
+<div class="feature-passed">
+
+    <div class="col-lg-6 col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    
+                    <a data-toggle="collapse" href="#collapseFeaturecypress_bddaf29f22d-d941-4a23-af9f-3ad70912ad1b">
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                        <i class="glyphicon glyphicon-chevron-down"></i>
+                        <b>Feature:</b>dynamicTable
+                        <span class="label-container">
+
+                        
+
+                        <span>< 1ms</span>
+                                
+              <span class="label label-success"
+                                                         title="3 Scenarios Passed">3</span>
+              
+              
+              
+              
+              
+                        </span>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseFeaturecypress_bddaf29f22d-d941-4a23-af9f-3ad70912ad1b" class="panel-collapse collapse">
+                <div class="panel-body">
+                    
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocypress_bdd88f9d8ab-0753-4b59-a928-08c24737bfa4">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Customer Table Row and column count">Customer Table Row and column count</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                                <span>< 1ms</span>
+                              
+                              <span class="label label-success"
+                                                               title="1 Steps Passed">1</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocypress_bdd88f9d8ab-0753-4b59-a928-08c24737bfa4"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Step</span>
+                          <span class="stepname"> passed</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocypress_bdd6a16899c-f89a-41fb-b50f-e7e1cf8acd1c">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Customer Table Read table">Customer Table Read table</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                                <span>< 1ms</span>
+                              
+                              <span class="label label-success"
+                                                               title="1 Steps Passed">1</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocypress_bdd6a16899c-f89a-41fb-b50f-e7e1cf8acd1c"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Step</span>
+                          <span class="stepname"> passed</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocypress_bddf72c99b3-a343-441d-b9b5-8f15db4f64bf">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Customer Table Total pages">Customer Table Total pages</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                                <span>< 1ms</span>
+                              
+                              <span class="label label-success"
+                                                               title="1 Steps Passed">1</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocypress_bddf72c99b3-a343-441d-b9b5-8f15db4f64bf"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Step</span>
+                          <span class="stepname"> passed</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+</div>
+
+
+
+<div class="row" xmlns="http://www.w3.org/1999/html">
+
+
+<div class="feature-failed">
+
+    <div class="col-lg-6 col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    
+                    <a data-toggle="collapse" href="#collapseFeaturecypress_bdd0f736f4a-18a2-4a96-af51-0c7f6ad3d556">
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                        <i class="glyphicon glyphicon-chevron-down"></i>
+                        <b>Feature:</b>ecommerce
+                        <span class="label-container">
+
+                        
+
+                        <span>< 1ms</span>
+                                
+              
+              <span class="label label-danger"
+                                                         title="1 Scenarios Failed">1</span>
+              
+              
+              
+              
+                        </span>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseFeaturecypress_bdd0f736f4a-18a2-4a96-af51-0c7f6ad3d556" class="panel-collapse collapse">
+                <div class="panel-body">
+                    
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocypress_bdd89aa298d-a999-4a55-bbcd-f149a8793910">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="End to End E-commerce Validation E-commerce product Delivery">End to End E-commerce Validation E-commerce product Delivery</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                                <span>< 1ms</span>
+                              
+                              
+                              
+                              
+                              
+                              <span class="label label-danger"
+                                                               title="3 Steps Failed">3</span>
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocypress_bdd89aa298d-a999-4a55-bbcd-f149a8793910"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Step</span>
+                          <span class="stepname"> failed</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Step</span>
+                          <span class="stepname"> failed</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Step</span>
+                          <span class="stepname"> failed</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+
+
+<div class="feature-passed">
+
+    <div class="col-lg-6 col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    
+                    <a data-toggle="collapse" href="#collapseFeaturecypress_bdd5d19c61b-b120-49dd-9c18-d282b94440ba">
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                        <i class="glyphicon glyphicon-chevron-down"></i>
+                        <b>Feature:</b>envVar
+                        <span class="label-container">
+
+                        
+
+                        <span>< 1ms</span>
+                                
+              <span class="label label-success"
+                                                         title="1 Scenarios Passed">1</span>
+              
+              
+              
+              
+              
+                        </span>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseFeaturecypress_bdd5d19c61b-b120-49dd-9c18-d282b94440ba" class="panel-collapse collapse">
+                <div class="panel-body">
+                    
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocypress_bddad972ae9-0b0d-4eec-bc7c-8b17f4c81417">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Login Demo with Environment Variables Successful login using ENV data">Login Demo with Environment Variables Successful login using ENV data</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                                <span>< 1ms</span>
+                              
+                              <span class="label label-success"
+                                                               title="1 Steps Passed">1</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocypress_bddad972ae9-0b0d-4eec-bc7c-8b17f4c81417"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Step</span>
+                          <span class="stepname"> passed</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+</div>
+
+
+
+<div class="row" xmlns="http://www.w3.org/1999/html">
+
+
+<div class="feature-passed">
+
+    <div class="col-lg-6 col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    
+                    <a data-toggle="collapse" href="#collapseFeaturecypress_bdd36bde8f3-3b34-4062-ae6d-cbe1548b09de">
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                        <i class="glyphicon glyphicon-chevron-down"></i>
+                        <b>Feature:</b>excel
+                        <span class="label-container">
+
+                        
+
+                        <span>< 1ms</span>
+                                
+              <span class="label label-success"
+                                                         title="1 Scenarios Passed">1</span>
+              
+              
+              
+              
+              
+                        </span>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseFeaturecypress_bdd36bde8f3-3b34-4062-ae6d-cbe1548b09de" class="panel-collapse collapse">
+                <div class="panel-body">
+                    
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocypress_bddd1b9201d-20ae-402b-b536-924fef90788d">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Fill form using Excel data Fill the practice form with Excel data">Fill form using Excel data Fill the practice form with Excel data</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                                <span>< 1ms</span>
+                              
+                              <span class="label label-success"
+                                                               title="1 Steps Passed">1</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocypress_bddd1b9201d-20ae-402b-b536-924fef90788d"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Step</span>
+                          <span class="stepname"> passed</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+
+
+<div class="feature-passed">
+
+    <div class="col-lg-6 col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    
+                    <a data-toggle="collapse" href="#collapseFeaturecypress_bddc07a0d17-8901-49fc-95c7-358d6fa69dbb">
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                        <i class="glyphicon glyphicon-chevron-down"></i>
+                        <b>Feature:</b>fileDownload
+                        <span class="label-container">
+
+                        
+
+                        <span>< 1ms</span>
+                                
+              <span class="label label-success"
+                                                         title="1 Scenarios Passed">1</span>
+              
+              
+              
+              
+              
+                        </span>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseFeaturecypress_bddc07a0d17-8901-49fc-95c7-358d6fa69dbb" class="panel-collapse collapse">
+                <div class="panel-body">
+                    
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocypress_bdd6e301073-b3e8-4ae6-90db-e78c4e55ef91">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Download and verify tour PDF User downloads the Kashmir tour itinerary PDF">Download and verify tour PDF User downloads the Kashmir tour itinerary PDF</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                                <span>< 1ms</span>
+                              
+                              <span class="label label-success"
+                                                               title="1 Steps Passed">1</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocypress_bdd6e301073-b3e8-4ae6-90db-e78c4e55ef91"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Step</span>
+                          <span class="stepname"> passed</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+</div>
+
+
+
+<div class="row" xmlns="http://www.w3.org/1999/html">
+
+
+<div class="feature-passed">
+
+    <div class="col-lg-6 col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    
+                    <a data-toggle="collapse" href="#collapseFeaturecypress_bdd73889215-d613-4452-9b6d-2a56cc0d0042">
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                        <i class="glyphicon glyphicon-chevron-down"></i>
+                        <b>Feature:</b>form
+                        <span class="label-container">
+
+                        
+
+                        <span>< 1ms</span>
+                                
+              <span class="label label-success"
+                                                         title="2 Scenarios Passed">2</span>
+              
+              
+              
+              
+              
+                        </span>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseFeaturecypress_bdd73889215-d613-4452-9b6d-2a56cc0d0042" class="panel-collapse collapse">
+                <div class="panel-body">
+                    
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocypress_bddb20359c2-648b-4708-a207-4c06cec33c38">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Form Validation on Angular Practice Website Submit the form with valid data">Form Validation on Angular Practice Website Submit the form with valid data</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                                <span>< 1ms</span>
+                              
+                              <span class="label label-success"
+                                                               title="1 Steps Passed">1</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocypress_bddb20359c2-648b-4708-a207-4c06cec33c38"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Step</span>
+                          <span class="stepname"> passed</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocypress_bdd910b3c6a-f6c5-48a7-9228-b293f141612f">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Form Validation on Angular Practice Website Validate required fields">Form Validation on Angular Practice Website Validate required fields</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                                <span>< 1ms</span>
+                              
+                              <span class="label label-success"
+                                                               title="1 Steps Passed">1</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocypress_bdd910b3c6a-f6c5-48a7-9228-b293f141612f"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Step</span>
+                          <span class="stepname"> passed</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+
+
+<div class="feature-passed">
+
+    <div class="col-lg-6 col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    
+                    <a data-toggle="collapse" href="#collapseFeaturecypress_bdd89c49c9e-122b-4a5e-8fcd-25e81a442d3a">
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                        <i class="glyphicon glyphicon-chevron-down"></i>
+                        <b>Feature:</b>Login
+                        <span class="label-container">
+
+                        
+
+                        <span>< 1ms</span>
+                                
+              <span class="label label-success"
+                                                         title="1 Scenarios Passed">1</span>
+              
+              
+              
+              
+              
+                        </span>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseFeaturecypress_bdd89c49c9e-122b-4a5e-8fcd-25e81a442d3a" class="panel-collapse collapse">
+                <div class="panel-body">
+                    
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocypress_bdde3554588-c0cc-4f8c-ad62-6105348a767e">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Login Login">Login Login</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                                <span>< 1ms</span>
+                              
+                              <span class="label label-success"
+                                                               title="1 Steps Passed">1</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocypress_bdde3554588-c0cc-4f8c-ad62-6105348a767e"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Step</span>
+                          <span class="stepname"> passed</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+</div>
+
+
+
+<div class="row" xmlns="http://www.w3.org/1999/html">
+
+
+<div class="feature-passed">
+
+    <div class="col-lg-6 col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    
+                    <a data-toggle="collapse" href="#collapseFeaturecypress_bdd9eca73f7-8f9c-4067-9e62-47383e20dbac">
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                        <i class="glyphicon glyphicon-chevron-down"></i>
+                        <b>Feature:</b>networkIntercept
+                        <span class="label-container">
+
+                        
+
+                        <span>< 1ms</span>
+                                
+              <span class="label label-success"
+                                                         title="1 Scenarios Passed">1</span>
+              
+              
+              
+              
+              
+                        </span>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseFeaturecypress_bdd9eca73f7-8f9c-4067-9e62-47383e20dbac" class="panel-collapse collapse">
+                <div class="panel-body">
+                    
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocypress_bddcb9dc1af-5051-4cc9-88ed-4cbf71475c63">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Network Interception and Modification Intercept and modify a network request">Network Interception and Modification Intercept and modify a network request</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                                <span>< 1ms</span>
+                              
+                              <span class="label label-success"
+                                                               title="1 Steps Passed">1</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocypress_bddcb9dc1af-5051-4cc9-88ed-4cbf71475c63"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Step</span>
+                          <span class="stepname"> passed</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+
+
+<div class="feature-passed">
+
+    <div class="col-lg-6 col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    
+                    <a data-toggle="collapse" href="#collapseFeaturecypress_bdd13666258-0721-417a-8027-ba4efa1fc779">
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                        <i class="glyphicon glyphicon-chevron-down"></i>
+                        <b>Feature:</b>networkInterceptContinue
+                        <span class="label-container">
+
+                        
+
+                        <span>< 1ms</span>
+                                
+              <span class="label label-success"
+                                                         title="1 Scenarios Passed">1</span>
+              
+              
+              
+              
+              
+                        </span>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseFeaturecypress_bdd13666258-0721-417a-8027-ba4efa1fc779" class="panel-collapse collapse">
+                <div class="panel-body">
+                    
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocypress_bdd1561b67f-0c30-4deb-a00a-5a75168a57bf">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="API Interception and URL Modification Modify request URL and validate 403 response">API Interception and URL Modification Modify request URL and validate 403 response</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                                <span>< 1ms</span>
+                              
+                              <span class="label label-success"
+                                                               title="1 Steps Passed">1</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocypress_bdd1561b67f-0c30-4deb-a00a-5a75168a57bf"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Step</span>
+                          <span class="stepname"> passed</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+</div>
+
+
+
+<div class="row" xmlns="http://www.w3.org/1999/html">
+
+
+<div class="feature-passed">
+
+    <div class="col-lg-6 col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    
+                    <a data-toggle="collapse" href="#collapseFeaturecypress_bdd06d32b95-d509-4f4d-8311-3f5e271a48e6">
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                        <i class="glyphicon glyphicon-chevron-down"></i>
+                        <b>Feature:</b>pagination
+                        <span class="label-container">
+
+                        
+
+                        <span>< 1ms</span>
+                                
+              <span class="label label-success"
+                                                         title="1 Scenarios Passed">1</span>
+              
+              
+              
+              
+              
+                        </span>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseFeaturecypress_bdd06d32b95-d509-4f4d-8311-3f5e271a48e6" class="panel-collapse collapse">
+                <div class="panel-body">
+                    
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocypress_bdd67d61768-b388-4381-85e2-fc5e2b8f73bc">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Pagination testing on the dynamic table Validate moving onto different pages">Pagination testing on the dynamic table Validate moving onto different pages</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                                <span>< 1ms</span>
+                              
+                              <span class="label label-success"
+                                                               title="1 Steps Passed">1</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocypress_bdd67d61768-b388-4381-85e2-fc5e2b8f73bc"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Step</span>
+                          <span class="stepname"> passed</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+
+
+<div class="feature-passed">
+
+    <div class="col-lg-6 col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    
+                    <a data-toggle="collapse" href="#collapseFeaturecypress_bdd95ec4438-abdf-4824-98df-5364ed4c7b81">
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                        <i class="glyphicon glyphicon-chevron-down"></i>
+                        <b>Feature:</b>screenshot
+                        <span class="label-container">
+
+                        
+
+                        <span>< 1ms</span>
+                                
+              <span class="label label-success"
+                                                         title="1 Scenarios Passed">1</span>
+              
+              
+              
+              
+              
+                        </span>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseFeaturecypress_bdd95ec4438-abdf-4824-98df-5364ed4c7b81" class="panel-collapse collapse">
+                <div class="panel-body">
+                    
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocypress_bdd6a888526-b068-4b3d-9558-a40b9972538c">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Visual validation for form page Fill form and verify UI">Visual validation for form page Fill form and verify UI</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                                <span>< 1ms</span>
+                              
+                              <span class="label label-success"
+                                                               title="1 Steps Passed">1</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocypress_bdd6a888526-b068-4b3d-9558-a40b9972538c"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Step</span>
+                          <span class="stepname"> passed</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+</div>
+
+
+
+<div class="row" xmlns="http://www.w3.org/1999/html">
+
+
+<div class="feature-passed">
+
+    <div class="col-lg-6 col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    
+                    <a data-toggle="collapse" href="#collapseFeaturecypress_bddc35ca783-f0c2-4ad8-a177-24288ac484e3">
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                        <i class="glyphicon glyphicon-chevron-down"></i>
+                        <b>Feature:</b>upload
+                        <span class="label-container">
+
+                        
+
+                        <span>< 1ms</span>
+                                
+              <span class="label label-success"
+                                                         title="2 Scenarios Passed">2</span>
+              
+              
+              
+              
+              
+                        </span>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseFeaturecypress_bddc35ca783-f0c2-4ad8-a177-24288ac484e3" class="panel-collapse collapse">
+                <div class="panel-body">
+                    
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocypress_bdd252f6e0a-a12f-49ed-b642-3d3c6ca9b173">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="File Upload Upload different file types (example #1)">File Upload Upload different file types (example #1)</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                                <span>< 1ms</span>
+                              
+                              <span class="label label-success"
+                                                               title="1 Steps Passed">1</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocypress_bdd252f6e0a-a12f-49ed-b642-3d3c6ca9b173"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Step</span>
+                          <span class="stepname"> passed</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocypress_bdd77262e9d-1657-4edb-a6fe-638c5c90b124">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="File Upload Upload different file types (example #2)">File Upload Upload different file types (example #2)</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                                <span>< 1ms</span>
+                              
+                              <span class="label label-success"
+                                                               title="1 Steps Passed">1</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocypress_bdd77262e9d-1657-4edb-a6fe-638c5c90b124"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Step</span>
+                          <span class="stepname"> passed</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+
+
+<div class="feature-passed">
+
+    <div class="col-lg-6 col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    
+                    <a data-toggle="collapse" href="#collapseFeaturecypress_bddc3aee4c5-1d1b-4a4e-aa81-f3019cff9f12">
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                        <i class="glyphicon glyphicon-chevron-down"></i>
+                        <b>Feature:</b>window
+                        <span class="label-container">
+
+                        
+
+                        <span>< 1ms</span>
+                                
+              <span class="label label-success"
+                                                         title="2 Scenarios Passed">2</span>
+              
+              
+              
+              
+              
+                        </span>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseFeaturecypress_bddc3aee4c5-1d1b-4a4e-aa81-f3019cff9f12" class="panel-collapse collapse">
+                <div class="panel-body">
+                    
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocypress_bdd6e3721b7-678a-4573-a03b-739076eb4334">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Handling new tabs on Practice Page Open new tab using removeAttr method">Handling new tabs on Practice Page Open new tab using removeAttr method</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                                <span>< 1ms</span>
+                              
+                              <span class="label label-success"
+                                                               title="1 Steps Passed">1</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocypress_bdd6e3721b7-678a-4573-a03b-739076eb4334"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Step</span>
+                          <span class="stepname"> passed</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocypress_bdd1e21fed2-b810-4b0b-aebd-28c2b2d59e55">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Handling new tabs on Practice Page Open new tab using href method">Handling new tabs on Practice Page Open new tab using href method</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                                <span>< 1ms</span>
+                              
+                              <span class="label label-success"
+                                                               title="1 Steps Passed">1</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocypress_bdd1e21fed2-b810-4b0b-aebd-28c2b2d59e55"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Step</span>
+                          <span class="stepname"> passed</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+</div>
+
+
+
+<div class="row" xmlns="http://www.w3.org/1999/html">
+
+
+<div class="feature-passed">
+
+    <div class="col-lg-6 col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    
+                    <a data-toggle="collapse" href="#collapseFeaturecypress_bddb3d3086f-caad-4a5e-8ec1-e2202b8f08ca">
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                        <i class="glyphicon glyphicon-chevron-down"></i>
+                        <b>Feature:</b>xlsx
+                        <span class="label-container">
+
+                        
+
+                        <span>< 1ms</span>
+                                
+              <span class="label label-success"
+                                                         title="1 Scenarios Passed">1</span>
+              
+              
+              
+              
+              
+                        </span>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseFeaturecypress_bddb3d3086f-caad-4a5e-8ec1-e2202b8f08ca" class="panel-collapse collapse">
+                <div class="panel-body">
+                    
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocypress_bdd032c7ea5-ccb0-4ed6-a7f9-c4db79e8a57a">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Modify XLSX file Replace Apple with BIG APPLE">Modify XLSX file Replace Apple with BIG APPLE</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                                <span>< 1ms</span>
+                              
+                              <span class="label label-success"
+                                                               title="1 Steps Passed">1</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocypress_bdd032c7ea5-ccb0-4ed6-a7f9-c4db79e8a57a"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Step</span>
+                          <span class="stepname"> passed</span>
+                            
+                          
+                              <span class="step-duration">
+                               0s
+                              </span>
+                            
+                         
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+</div>
+
+
+
+          
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+    integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script type="text/javascript">
+    google.load("visualization", "1", { packages: ["corechart"] });
+    google.setOnLoadCallback(function () {
+      drawChart({
+        "title": "Features",
+        "failed": 1,
+        "passed": 16,
+        "notdefined": 0,
+        "pending": 0,
+        "skipped": 0,
+        "ambiguous": 0
+                                                        })
+    });
+    google.setOnLoadCallback(function () {
+      drawChart({
+        "title": "Scenarios",
+        "failed": 1,
+        "passed": 22,
+        "rerun": 0,
+        "notdefined": 0,
+        "pending": 0,
+        "skipped": 0,
+        "ambiguous": 0
+                                                        })
+    });
+  </script>
+  <script>
+      $(document).ready(function () {
+  $('.collapse')
+    .on('hide.bs.collapse', function (e) {
+      e.stopPropagation();
+      $(this).prev().removeClass('open');
+    })
+    .on('show.bs.collapse', function (e) {
+      e.stopPropagation();
+      $(this).prev().addClass('open');
+    });
+
+  let $generated = $('.generated-on');
+
+  let timestamp = $generated.text();
+  $generated.text('Report generated ' + moment(timestamp).fromNow());
+  $generated.prop('title', new Date(timestamp).toISOString());
+});
+
+$(document).ready(function () {
+  const $collapsibleItems = $('[data-toggle="collapse"]');
+  const $collapseAllBtn = $('#collapse_all');
+  const $expandAllBtn = $('#expand_all');
+
+  const collapseAll = function () {
+    $collapsibleItems.each(function () {
+      $($(this).attr('href')).collapse('hide');
+    });
+  };
+
+  const expandAll = function () {
+    $collapsibleItems.each(function () {
+      $($(this).attr('href')).collapse('show');
+    });
+  };
+
+  $collapseAllBtn.on('click', collapseAll);
+  $expandAllBtn.on('click', expandAll);
+
+});
+
+function toggle(className) {
+  let x = $(className);
+  if (x.css('display') === 'none') {
+    x.css('display', 'block');
+  } else {
+    x.css('display', 'none');
+  }
+}
+
+      function drawChart(chartData) {
+  let data = google.visualization.arrayToDataTable([
+    ['Task', 'Cucumber Results'],
+    ['Passed', chartData.passed],
+    ['Failed', chartData.failed],
+    ['Pending', chartData.pending],
+    ['Undefined', chartData.notdefined],
+    ['Ambiguous', chartData.ambiguous],
+    ['Skipped', chartData.skipped],
+    ['Re-run', chartData.rerun],
+  ]);
+
+  let total =
+    chartData.passed +
+      chartData.failed +
+      (chartData.pending || 0) +
+      (chartData.notdefined || 0) +
+      (chartData.ambiguous || 0) +
+      (chartData.skipped || 0) ||
+    chartData.rerun ||
+    0;
+  let title;
+
+  if (total === 1) {
+    title = total + ' ' + chartData.title.slice(0, -1);
+  } else {
+    title = total + ' ' + chartData.title;
+  }
+
+  let options = {
+    width: '100%',
+    height: 240,
+    title: title,
+    is3D: true,
+    colors: ['#5cb85c', '#d9534f', '#999', '#5bc0de', '#428bca', '#f0ad4e', '#ff9933'],
+    fontSize: '13',
+    fontName: '"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif',
+    slices: {
+      1: { offset: 0.4 },
+      2: { offset: 0.4 },
+      3: { offset: 0.4 },
+      4: { offset: 0.4 },
+      5: { offset: 0.4 },
+      6: { offset: 0.4 },
+      7: { offset: 0.4 },
+    },
+    titleTextStyle: {
+      fontSize: '13',
+      color: '#5e5e5e',
+    },
+  };
+
+  let chart = new google.visualization.PieChart(document.getElementById('piechart_' + chartData.title.toLowerCase()));
+
+  chart.draw(data, options);
+}
+
+      $('a.toggle').on('click', function (e) {
+  e.preventDefault();
+
+  if (!$(this).hasClass('collapse')) {
+    if ($(this).text() === 'Screenshot -') {
+      // $(this).text('Screenshot +');
+      $(this).next('a.screenshot').find('img').hide();
+    } else if ($(this).text() === 'Screenshot +') {
+      // $(this).text('Screenshot -');
+      $(this).next('a.screenshot').find('img').show();
+    }
+  }
+
+  if ($(this).text().includes(' -')) {
+    $(this).text($(this).text().replace(' -', ' +'));
+  } else {
+    $(this).text($(this).text().replace(' +', ' -'));
+  }
+});
+
+  </script>
+</body>
+
+</html>

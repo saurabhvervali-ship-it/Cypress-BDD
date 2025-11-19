@@ -1,0 +1,24 @@
+[
+  {
+    "uri": "cypress\\e2e\\Features\\pagination.feature",
+    "id": "pagination",
+    "keyword": "Feature",
+    "name": "pagination",
+    "elements": [
+      {
+        "id": "pagination testing on the dynamic table-validate moving onto different pages",
+        "keyword": "Scenario",
+        "name": "Pagination testing on the dynamic table Validate moving onto different pages",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "passed",
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

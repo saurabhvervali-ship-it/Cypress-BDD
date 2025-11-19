@@ -1,0 +1,38 @@
+[
+  {
+    "uri": "cypress\\e2e\\Features\\dropandcheckboxes.feature",
+    "id": "dropandcheckboxes",
+    "keyword": "Feature",
+    "name": "dropandcheckboxes",
+    "elements": [
+      {
+        "id": "dropdown and checkbox testing-single dropdown",
+        "keyword": "Scenario",
+        "name": "Dropdown and Checkbox Testing Single dropdown",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "passed",
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "dropdown and checkbox testing-checkbox test",
+        "keyword": "Scenario",
+        "name": "Dropdown and Checkbox Testing Checkbox test",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "passed",
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

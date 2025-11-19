@@ -1,0 +1,24 @@
+[
+  {
+    "uri": "cypress\\e2e\\Features\\ecommerce.feature",
+    "id": "ecommerce",
+    "keyword": "Feature",
+    "name": "ecommerce",
+    "elements": [
+      {
+        "id": "end to end e-commerce validation-e-commerce product delivery",
+        "keyword": "Scenario",
+        "name": "End to End E-commerce Validation E-commerce product Delivery",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "passed",
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

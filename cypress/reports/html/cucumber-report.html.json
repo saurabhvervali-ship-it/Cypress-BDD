@@ -1,0 +1,497 @@
+[
+  {
+    "uri": "cypress\\e2e\\Features\\apibooks.feature",
+    "id": "apibooks",
+    "keyword": "Feature",
+    "name": "apibooks",
+    "elements": [
+      {
+        "id": "validate products api using cy.request-verify products api response",
+        "keyword": "Scenario",
+        "name": "Validate Products API using cy.request Verify products API response",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "passed",
+            "result": {
+              "status": "passed"
+            }
+          }
+        ],
+        "retried": 0
+      }
+    ]
+  },
+  {
+    "uri": "cypress\\e2e\\Features\\calculations.feature",
+    "id": "calculations",
+    "keyword": "Feature",
+    "name": "calculations",
+    "elements": [
+      {
+        "id": "validate cart totals-add two items and verify total",
+        "keyword": "Scenario",
+        "name": "Validate cart totals Add two items and verify total",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "passed",
+            "result": {
+              "status": "passed"
+            }
+          }
+        ],
+        "retried": 0
+      }
+    ]
+  },
+  {
+    "uri": "cypress\\e2e\\Features\\dropandcheckboxes.feature",
+    "id": "dropandcheckboxes",
+    "keyword": "Feature",
+    "name": "dropandcheckboxes",
+    "elements": [
+      {
+        "id": "dropdown and checkbox testing-single dropdown",
+        "keyword": "Scenario",
+        "name": "Dropdown and Checkbox Testing Single dropdown",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "passed",
+            "result": {
+              "status": "passed"
+            }
+          }
+        ],
+        "retried": 0
+      },
+      {
+        "id": "dropdown and checkbox testing-checkbox test",
+        "keyword": "Scenario",
+        "name": "Dropdown and Checkbox Testing Checkbox test",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "passed",
+            "result": {
+              "status": "passed"
+            }
+          }
+        ],
+        "retried": 0
+      }
+    ]
+  },
+  {
+    "uri": "cypress\\e2e\\Features\\dynamicTable.feature",
+    "id": "dynamicTable",
+    "keyword": "Feature",
+    "name": "dynamicTable",
+    "elements": [
+      {
+        "id": "customer table-row and column count",
+        "keyword": "Scenario",
+        "name": "Customer Table Row and column count",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "passed",
+            "result": {
+              "status": "passed"
+            }
+          }
+        ],
+        "retried": 0
+      },
+      {
+        "id": "customer table-read table",
+        "keyword": "Scenario",
+        "name": "Customer Table Read table",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "passed",
+            "result": {
+              "status": "passed"
+            }
+          }
+        ],
+        "retried": 0
+      },
+      {
+        "id": "customer table-total pages",
+        "keyword": "Scenario",
+        "name": "Customer Table Total pages",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "passed",
+            "result": {
+              "status": "passed"
+            }
+          }
+        ],
+        "retried": 0
+      }
+    ]
+  },
+  {
+    "uri": "cypress\\e2e\\Features\\ecommerce.feature",
+    "id": "ecommerce",
+    "keyword": "Feature",
+    "name": "ecommerce",
+    "elements": [
+      {
+        "id": "end to end e-commerce validation-e-commerce product delivery",
+        "keyword": "Scenario",
+        "name": "End to End E-commerce Validation E-commerce product Delivery",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "failed",
+            "result": {
+              "status": "failed"
+            }
+          },
+          {
+            "keyword": "Step",
+            "name": "failed",
+            "result": {
+              "status": "failed"
+            }
+          },
+          {
+            "keyword": "Step",
+            "name": "failed",
+            "result": {
+              "status": "failed"
+            }
+          }
+        ],
+        "retried": 0
+      }
+    ]
+  },
+  {
+    "uri": "cypress\\e2e\\Features\\envVar.feature",
+    "id": "envVar",
+    "keyword": "Feature",
+    "name": "envVar",
+    "elements": [
+      {
+        "id": "login demo with environment variables-successful login using env data",
+        "keyword": "Scenario",
+        "name": "Login Demo with Environment Variables Successful login using ENV data",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "passed",
+            "result": {
+              "status": "passed"
+            }
+          }
+        ],
+        "retried": 0
+      }
+    ]
+  },
+  {
+    "uri": "cypress\\e2e\\Features\\excel.feature",
+    "id": "excel",
+    "keyword": "Feature",
+    "name": "excel",
+    "elements": [
+      {
+        "id": "fill form using excel data-fill the practice form with excel data",
+        "keyword": "Scenario",
+        "name": "Fill form using Excel data Fill the practice form with Excel data",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "passed",
+            "result": {
+              "status": "passed"
+            }
+          }
+        ],
+        "retried": 0
+      }
+    ]
+  },
+  {
+    "uri": "cypress\\e2e\\Features\\fileDownload.feature",
+    "id": "fileDownload",
+    "keyword": "Feature",
+    "name": "fileDownload",
+    "elements": [
+      {
+        "id": "download and verify tour pdf-user downloads the kashmir tour itinerary pdf",
+        "keyword": "Scenario",
+        "name": "Download and verify tour PDF User downloads the Kashmir tour itinerary PDF",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "passed",
+            "result": {
+              "status": "passed"
+            }
+          }
+        ],
+        "retried": 0
+      }
+    ]
+  },
+  {
+    "uri": "cypress\\e2e\\Features\\form.feature",
+    "id": "form",
+    "keyword": "Feature",
+    "name": "form",
+    "elements": [
+      {
+        "id": "form validation on angular practice website-submit the form with valid data",
+        "keyword": "Scenario",
+        "name": "Form Validation on Angular Practice Website Submit the form with valid data",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "passed",
+            "result": {
+              "status": "passed"
+            }
+          }
+        ],
+        "retried": 0
+      },
+      {
+        "id": "form validation on angular practice website-validate required fields",
+        "keyword": "Scenario",
+        "name": "Form Validation on Angular Practice Website Validate required fields",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "passed",
+            "result": {
+              "status": "passed"
+            }
+          }
+        ],
+        "retried": 0
+      }
+    ]
+  },
+  {
+    "uri": "cypress\\e2e\\Features\\Login.feature",
+    "id": "Login",
+    "keyword": "Feature",
+    "name": "Login",
+    "elements": [
+      {
+        "id": "login-login",
+        "keyword": "Scenario",
+        "name": "Login Login",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "passed",
+            "result": {
+              "status": "passed"
+            }
+          }
+        ],
+        "retried": 0
+      }
+    ]
+  },
+  {
+    "uri": "cypress\\e2e\\Features\\networkIntercept.feature",
+    "id": "networkIntercept",
+    "keyword": "Feature",
+    "name": "networkIntercept",
+    "elements": [
+      {
+        "id": "network interception and modification-intercept and modify a network request",
+        "keyword": "Scenario",
+        "name": "Network Interception and Modification Intercept and modify a network request",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "passed",
+            "result": {
+              "status": "passed"
+            }
+          }
+        ],
+        "retried": 0
+      }
+    ]
+  },
+  {
+    "uri": "cypress\\e2e\\Features\\networkInterceptContinue.feature",
+    "id": "networkInterceptContinue",
+    "keyword": "Feature",
+    "name": "networkInterceptContinue",
+    "elements": [
+      {
+        "id": "api interception and url modification-modify request url and validate 403 response",
+        "keyword": "Scenario",
+        "name": "API Interception and URL Modification Modify request URL and validate 403 response",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "passed",
+            "result": {
+              "status": "passed"
+            }
+          }
+        ],
+        "retried": 0
+      }
+    ]
+  },
+  {
+    "uri": "cypress\\e2e\\Features\\pagination.feature",
+    "id": "pagination",
+    "keyword": "Feature",
+    "name": "pagination",
+    "elements": [
+      {
+        "id": "pagination testing on the dynamic table-validate moving onto different pages",
+        "keyword": "Scenario",
+        "name": "Pagination testing on the dynamic table Validate moving onto different pages",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "passed",
+            "result": {
+              "status": "passed"
+            }
+          }
+        ],
+        "retried": 0
+      }
+    ]
+  },
+  {
+    "uri": "cypress\\e2e\\Features\\screenshot.feature",
+    "id": "screenshot",
+    "keyword": "Feature",
+    "name": "screenshot",
+    "elements": [
+      {
+        "id": "visual validation for form page-fill form and verify ui",
+        "keyword": "Scenario",
+        "name": "Visual validation for form page Fill form and verify UI",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "passed",
+            "result": {
+              "status": "passed"
+            }
+          }
+        ],
+        "retried": 0
+      }
+    ]
+  },
+  {
+    "uri": "cypress\\e2e\\Features\\upload.feature",
+    "id": "upload",
+    "keyword": "Feature",
+    "name": "upload",
+    "elements": [
+      {
+        "id": "file upload-upload different file types (example #1)",
+        "keyword": "Scenario",
+        "name": "File Upload Upload different file types (example #1)",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "passed",
+            "result": {
+              "status": "passed"
+            }
+          }
+        ],
+        "retried": 0
+      },
+      {
+        "id": "file upload-upload different file types (example #2)",
+        "keyword": "Scenario",
+        "name": "File Upload Upload different file types (example #2)",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "passed",
+            "result": {
+              "status": "passed"
+            }
+          }
+        ],
+        "retried": 0
+      }
+    ]
+  },
+  {
+    "uri": "cypress\\e2e\\Features\\window.feature",
+    "id": "window",
+    "keyword": "Feature",
+    "name": "window",
+    "elements": [
+      {
+        "id": "handling new tabs on practice page-open new tab using removeattr method",
+        "keyword": "Scenario",
+        "name": "Handling new tabs on Practice Page Open new tab using removeAttr method",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "passed",
+            "result": {
+              "status": "passed"
+            }
+          }
+        ],
+        "retried": 0
+      },
+      {
+        "id": "handling new tabs on practice page-open new tab using href method",
+        "keyword": "Scenario",
+        "name": "Handling new tabs on Practice Page Open new tab using href method",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "passed",
+            "result": {
+              "status": "passed"
+            }
+          }
+        ],
+        "retried": 0
+      }
+    ]
+  },
+  {
+    "uri": "cypress\\e2e\\Features\\xlsx.feature",
+    "id": "xlsx",
+    "keyword": "Feature",
+    "name": "xlsx",
+    "elements": [
+      {
+        "id": "modify xlsx file-replace apple with big apple",
+        "keyword": "Scenario",
+        "name": "Modify XLSX file Replace Apple with BIG APPLE",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "passed",
+            "result": {
+              "status": "passed"
+            }
+          }
+        ],
+        "retried": 0
+      }
+    ]
+  }
+]

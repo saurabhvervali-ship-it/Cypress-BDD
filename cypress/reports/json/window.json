@@ -1,0 +1,38 @@
+[
+  {
+    "uri": "cypress\\e2e\\Features\\window.feature",
+    "id": "window",
+    "keyword": "Feature",
+    "name": "window",
+    "elements": [
+      {
+        "id": "handling new tabs on practice page-open new tab using removeattr method",
+        "keyword": "Scenario",
+        "name": "Handling new tabs on Practice Page Open new tab using removeAttr method",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "passed",
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "handling new tabs on practice page-open new tab using href method",
+        "keyword": "Scenario",
+        "name": "Handling new tabs on Practice Page Open new tab using href method",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "passed",
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

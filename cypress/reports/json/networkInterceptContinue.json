@@ -1,0 +1,24 @@
+[
+  {
+    "uri": "cypress\\e2e\\Features\\networkInterceptContinue.feature",
+    "id": "networkInterceptContinue",
+    "keyword": "Feature",
+    "name": "networkInterceptContinue",
+    "elements": [
+      {
+        "id": "api interception and url modification-modify request url and validate 403 response",
+        "keyword": "Scenario",
+        "name": "API Interception and URL Modification Modify request URL and validate 403 response",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "passed",
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

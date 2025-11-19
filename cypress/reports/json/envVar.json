@@ -1,0 +1,24 @@
+[
+  {
+    "uri": "cypress\\e2e\\Features\\envVar.feature",
+    "id": "envVar",
+    "keyword": "Feature",
+    "name": "envVar",
+    "elements": [
+      {
+        "id": "login demo with environment variables-successful login using env data",
+        "keyword": "Scenario",
+        "name": "Login Demo with Environment Variables Successful login using ENV data",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "passed",
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

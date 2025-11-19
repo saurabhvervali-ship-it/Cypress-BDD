@@ -1,0 +1,38 @@
+[
+  {
+    "uri": "cypress\\e2e\\Features\\form.feature",
+    "id": "form",
+    "keyword": "Feature",
+    "name": "form",
+    "elements": [
+      {
+        "id": "form validation on angular practice website-submit the form with valid data",
+        "keyword": "Scenario",
+        "name": "Form Validation on Angular Practice Website Submit the form with valid data",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "passed",
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "form validation on angular practice website-validate required fields",
+        "keyword": "Scenario",
+        "name": "Form Validation on Angular Practice Website Validate required fields",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "passed",
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

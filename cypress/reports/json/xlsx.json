@@ -1,0 +1,24 @@
+[
+  {
+    "uri": "cypress\\e2e\\Features\\xlsx.feature",
+    "id": "xlsx",
+    "keyword": "Feature",
+    "name": "xlsx",
+    "elements": [
+      {
+        "id": "modify xlsx file-replace apple with big apple",
+        "keyword": "Scenario",
+        "name": "Modify XLSX file Replace Apple with BIG APPLE",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "passed",
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "uri": "cypress\\e2e\\Features\\dynamicTable.feature",
+    "id": "dynamicTable",
+    "keyword": "Feature",
+    "name": "dynamicTable",
+    "elements": [
+      {
+        "id": "customer table-row and column count",
+        "keyword": "Scenario",
+        "name": "Customer Table Row and column count",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "passed",
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "customer table-read table",
+        "keyword": "Scenario",
+        "name": "Customer Table Read table",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "passed",
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "customer table-total pages",
+        "keyword": "Scenario",
+        "name": "Customer Table Total pages",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "passed",
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "uri": "cypress\\e2e\\Features\\calculations.feature",
+    "id": "calculations",
+    "keyword": "Feature",
+    "name": "calculations",
+    "elements": [
+      {
+        "id": "validate cart totals-add two items and verify total",
+        "keyword": "Scenario",
+        "name": "Validate cart totals Add two items and verify total",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "failed",
+            "result": {
+              "status": "failed"
+            }
+          },
+          {
+            "keyword": "Step",
+            "name": "failed",
+            "result": {
+              "status": "failed"
+            }
+          },
+          {
+            "keyword": "Step",
+            "name": "failed",
+            "result": {
+              "status": "failed"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

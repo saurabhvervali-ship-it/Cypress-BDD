@@ -1,0 +1,38 @@
+[
+  {
+    "uri": "cypress\\e2e\\Features\\upload.feature",
+    "id": "upload",
+    "keyword": "Feature",
+    "name": "upload",
+    "elements": [
+      {
+        "id": "file upload-upload different file types (example #1)",
+        "keyword": "Scenario",
+        "name": "File Upload Upload different file types (example #1)",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "passed",
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "file upload-upload different file types (example #2)",
+        "keyword": "Scenario",
+        "name": "File Upload Upload different file types (example #2)",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "passed",
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

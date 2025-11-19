@@ -1,0 +1,24 @@
+[
+  {
+    "uri": "cypress\\e2e\\Features\\Login.feature",
+    "id": "Login",
+    "keyword": "Feature",
+    "name": "Login",
+    "elements": [
+      {
+        "id": "login-login",
+        "keyword": "Scenario",
+        "name": "Login Login",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "passed",
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

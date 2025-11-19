@@ -1,0 +1,38 @@
+[
+  {
+    "uri": "cypress\\e2e\\Features\\emailverifY.feature",
+    "id": "emailverifY",
+    "keyword": "Feature",
+    "name": "emailverifY",
+    "elements": [
+      {
+        "id": "signup verification-user signs up and verifies email",
+        "keyword": "Scenario",
+        "name": "Signup verification User signs up and verifies email",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "failed",
+            "result": {
+              "status": "failed"
+            }
+          },
+          {
+            "keyword": "Step",
+            "name": "failed",
+            "result": {
+              "status": "failed"
+            }
+          },
+          {
+            "keyword": "Step",
+            "name": "failed",
+            "result": {
+              "status": "failed"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

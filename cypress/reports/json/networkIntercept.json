@@ -1,0 +1,24 @@
+[
+  {
+    "uri": "cypress\\e2e\\Features\\networkIntercept.feature",
+    "id": "networkIntercept",
+    "keyword": "Feature",
+    "name": "networkIntercept",
+    "elements": [
+      {
+        "id": "network interception and modification-intercept and modify a network request",
+        "keyword": "Scenario",
+        "name": "Network Interception and Modification Intercept and modify a network request",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "passed",
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

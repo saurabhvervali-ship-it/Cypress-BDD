@@ -1,0 +1,24 @@
+[
+  {
+    "uri": "cypress\\e2e\\Features\\screenshot.feature",
+    "id": "screenshot",
+    "keyword": "Feature",
+    "name": "screenshot",
+    "elements": [
+      {
+        "id": "visual validation for form page-fill form and verify ui",
+        "keyword": "Scenario",
+        "name": "Visual validation for form page Fill form and verify UI",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "passed",
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

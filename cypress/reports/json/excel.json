@@ -1,0 +1,24 @@
+[
+  {
+    "uri": "cypress\\e2e\\Features\\excel.feature",
+    "id": "excel",
+    "keyword": "Feature",
+    "name": "excel",
+    "elements": [
+      {
+        "id": "fill form using excel data-fill the practice form with excel data",
+        "keyword": "Scenario",
+        "name": "Fill form using Excel data Fill the practice form with Excel data",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "passed",
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

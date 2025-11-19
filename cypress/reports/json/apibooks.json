@@ -1,0 +1,38 @@
+[
+  {
+    "uri": "cypress\\e2e\\Features\\apibooks.feature",
+    "id": "apibooks",
+    "keyword": "Feature",
+    "name": "apibooks",
+    "elements": [
+      {
+        "id": "validate products api using cy.request-verify products api response",
+        "keyword": "Scenario",
+        "name": "Validate Products API using cy.request Verify products API response",
+        "steps": [
+          {
+            "keyword": "Step",
+            "name": "failed",
+            "result": {
+              "status": "failed"
+            }
+          },
+          {
+            "keyword": "Step",
+            "name": "failed",
+            "result": {
+              "status": "failed"
+            }
+          },
+          {
+            "keyword": "Step",
+            "name": "failed",
+            "result": {
+              "status": "failed"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

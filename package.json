@@ -1,0 +1,33 @@
+{
+  "name": "cypress-bdd",
+  "version": "1.0.0",
+  "description": "Cypress BDD Framework with Cucumber and HTML Reporting",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run",
+    "open": "npx cypress open",
+    "report": "node ./generate-report.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^23.2.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.7",
+    "cucumber-html-reporter": "^7.2.0",
+    "cypress": "^15.6.0",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-image-diff-js": "^2.5.0",
+    "mailhog": "^4.16.0",
+    "nodemailer": "^7.0.10",
+    "pdf-parse": "^2.4.5",
+    "rxjs": "^7.8.2"
+  },
+  "dependencies": {
+    "date-fns": "^4.1.0",
+    "exceljs": "^4.4.0",
+    "fs-extra": "^11.3.2",
+    "multiple-cucumber-html-reporter": "^3.9.3",
+    "read-excel-file": "^6.0.1",
+    "xlsx": "^0.18.5"
+  }
+}
