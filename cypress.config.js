@@ -13,7 +13,6 @@ const ExcelJS = require("exceljs");
 const readXlsx = require("read-excel-file/node");
 const reporter = require("cucumber-html-reporter");
 
-// ⭐ ADD THIS
 const nodemailer = require("nodemailer");
 
 module.exports = defineConfig({
@@ -91,10 +90,10 @@ module.exports = defineConfig({
             ];
 
             fs.writeFileSync(jsonFile, JSON.stringify(featureResult, null, 2));
-            console.log(`✅ Created JSON report: ${jsonFile}`);
+            console.log(` Created JSON report: ${jsonFile}`);
           }
         } catch (err) {
-          console.error(`⚠️ Failed to create JSON for ${spec.relative}:`, err.message);
+          console.error(` Failed to create JSON for ${spec.relative}:`, err.message);
         }
       });
 
@@ -114,15 +113,12 @@ module.exports = defineConfig({
               Platform: "Windows 10",
             },
           });
-          console.log("✅ HTML report successfully created!");
+          console.log(" HTML report successfully created!");
         } catch (err) {
-          console.error("❌ Failed to generate HTML report:", err.message);
+          console.error("Failed to generate HTML report:", err.message);
         }
       });
 
-      // -------------------------------------------------------
-             //MAILHOG SMTP TASK
-      // -------------------------------------------------------
       on("task", {
         sendMail({ to, subject, text }) {
           return new Promise((resolve, reject) => {
