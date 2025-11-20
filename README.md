@@ -1,2 +1,2 @@
 My first TCs are here!  ! 
-(Cypress Cucumber BDD)
+(Cypress Cucumber BDD with JavaScript)
